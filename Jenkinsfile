@@ -17,7 +17,11 @@ pipeline {
         stage ('check fossa'){
             steps {
             
-                sh '/usr/local/bin/fossa -o > report'
+                sh '''
+                    /usr/local/bin/fossa -o > report.json
+                    echo "Report available at /var/lib/jenkins/workspace/Dock3/report.json"
+                '''
+
             }
         }
             stage ('Build') {
