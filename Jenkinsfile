@@ -17,7 +17,7 @@ pipeline {
         stage ('check fossa'){
             steps {
             
-                sh '/usr/local/bin/fossa -o'
+                sh '/usr/local/bin/fossa -o > report'
             }
         }
             stage ('Build') {
