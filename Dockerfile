@@ -16,8 +16,8 @@ ENV TOMCAT_JVM_ROUTE tomcat80
 RUN mkdir -p "$CATALINA_HOME"
 WORKDIR /tmp
 
-RUN curl -O https://www.apache.org/dist/tomcat/tomcat-8/v8.5.31/bin/apache-tomcat-8.5.31.tar.gz && \
-	tar -xvf /tmp/apache-tomcat-8.5.31.tar.gz -C /opt/tomcat --strip-components=1 && \
+RUN curl -O https://www.apache.org/dist/tomcat/tomcat-8/v8.5.40/bin/apache-tomcat-8.5.40-deployer.tar.gz && \
+	tar -xvf /tmp/apache-tomcat-8.5.40-deployer.tar.gz -C /opt/tomcat --strip-components=1 && \
     rm $CATALINA_HOME/bin/*.bat && rm /tmp/apache-tomcat-8.5.31.tar.gz
 
 WORKDIR $CATALINA_HOME
