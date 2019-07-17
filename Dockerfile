@@ -18,7 +18,7 @@ WORKDIR /tmp
 
 RUN curl -O https://www.apache.org/dist/tomcat/tomcat-8/v8.5.43/bin/apache-tomcat-8.5.43.tar.gz && \
 	tar -xvf /tmp/apache-tomcat-8.5.43.tar.gz -C /opt/tomcat --strip-components=1 && \
-    	rm $CATALINA_HOME/bin/*.bat && rm /tmp/apache-tomcat-8.5.40.tar.gz
+    	rm $CATALINA_HOME/bin/*.bat && rm /tmp/apache-tomcat-8.5.43.tar.gz
     
 
 WORKDIR $CATALINA_HOME
