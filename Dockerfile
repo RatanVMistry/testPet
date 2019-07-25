@@ -1,6 +1,6 @@
 FROM ojbc/java8-server-base
 
-MAINTAINER Open Justice Broker Consortium "http://www.ojbc.org"
+MAINTAINER RATAN MISTRY
 
 RUN apk add --update unzip zip tar curl
 
