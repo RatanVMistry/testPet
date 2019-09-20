@@ -266,6 +266,18 @@
 			<version>5.1.45</version>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+	     <repository>
+	        <id>central</id>
+	        <name>ratraja30101-artifactory-primary-0-releases</name>
+	        <url>https://ratraja30101.jfrog.io/ratraja30101/libs-release-local</url>
+	    </repository>
+	    <snapshotRepository>
+	        <id>snapshots</id>
+	        <name>ratraja30101-artifactory-primary-0-snapshots</name>
+	        <url>https://ratraja30101.jfrog.io/ratraja30101/libs-snapshot-local</url>
+	    </snapshotRepository>
+	</distributionManagement>
 
 	<!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
 	<build>
