@@ -38,7 +38,7 @@
 		<webjars-jquery.version>2.0.3-1</webjars-jquery.version>
 		<dandelion.version>1.0.1</dandelion.version>
 
-		<cobertura.version>2.7</cobertura.version>
+		<!-- <cobertura.version>2.7</cobertura.version> -->
 
 	</properties>
 
