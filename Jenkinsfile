@@ -12,7 +12,7 @@ pipeline {
                 rtServer (
                     id: "JFrogServer",
                     url: "https://ratraja30101.jfrog.io/ratraja30101",
-                    credentialsId: jFrog
+                    credentialsId: "jFrog"
                 )
 
                 rtMavenDeployer (
